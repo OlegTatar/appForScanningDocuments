@@ -47,27 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="Domain\Common\ScannerProcesses.cs" />
+    <Compile Include="Domain\Extensions\ScannerSettings.cs" />
+    <Compile Include="Domain\Models\ScanDocument.cs" />
+    <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPreview.cs">
+    <Compile Include="Forms\FormPreview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPreview.Designer.cs">
+    <Compile Include="Forms\FormPreview.Designer.cs">
       <DependentUpon>FormPreview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logic\Settings.cs" />
-    <Compile Include="Models\ScanDto.cs" />
+    <Compile Include="Domain\Models\Scanner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\ComboBoxDeviceItem.cs" />
-    <EmbeddedResource Include="FormMain.resx">
+    <Compile Include="Domain\Models\ComboBoxDeviceItem.cs" />
+    <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPreview.resx">
+    <EmbeddedResource Include="Forms\FormPreview.resx">
       <DependentUpon>FormPreview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

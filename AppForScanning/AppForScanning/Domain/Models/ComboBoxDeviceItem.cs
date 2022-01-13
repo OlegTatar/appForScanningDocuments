@@ -1,4 +1,4 @@
-﻿namespace AppForScanning.Models
+﻿namespace AppForScanning.Domain.Models
 {
     public class ComboBoxDeviceItem
     {
