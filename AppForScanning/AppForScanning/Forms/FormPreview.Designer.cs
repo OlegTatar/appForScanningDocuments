@@ -1,5 +1,5 @@
 ﻿
-namespace AppForScanning
+namespace AppForScanning.Forms
 {
     partial class FormPreview
     {
@@ -41,19 +41,19 @@ namespace AppForScanning
             // textBoxFileName
             // 
             this.textBoxFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxFileName.Location = new System.Drawing.Point(192, 12);
+            this.textBoxFileName.Location = new System.Drawing.Point(165, 12);
             this.textBoxFileName.Name = "textBoxFileName";
-            this.textBoxFileName.Size = new System.Drawing.Size(547, 24);
+            this.textBoxFileName.Size = new System.Drawing.Size(386, 24);
             this.textBoxFileName.TabIndex = 0;
             this.textBoxFileName.UseWaitCursor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(13, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 18);
+            this.label1.Size = new System.Drawing.Size(146, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Название документа";
             this.label1.UseWaitCursor = true;
@@ -62,31 +62,31 @@ namespace AppForScanning
             // 
             this.pictureBoxPreview.Location = new System.Drawing.Point(15, 55);
             this.pictureBoxPreview.Name = "pictureBoxPreview";
-            this.pictureBoxPreview.Size = new System.Drawing.Size(724, 717);
+            this.pictureBoxPreview.Size = new System.Drawing.Size(536, 737);
             this.pictureBoxPreview.TabIndex = 2;
             this.pictureBoxPreview.TabStop = false;
             this.pictureBoxPreview.UseWaitCursor = true;
             // 
             // buttonNewScan
             // 
-            this.buttonNewScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonNewScan.Location = new System.Drawing.Point(247, 789);
+            this.buttonNewScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonNewScan.Location = new System.Drawing.Point(198, 811);
             this.buttonNewScan.Name = "buttonNewScan";
-            this.buttonNewScan.Size = new System.Drawing.Size(243, 30);
+            this.buttonNewScan.Size = new System.Drawing.Size(178, 28);
             this.buttonNewScan.TabIndex = 3;
-            this.buttonNewScan.Text = "Новое сканирование";
+            this.buttonNewScan.Text = "Пересканировать";
             this.buttonNewScan.UseVisualStyleBackColor = true;
             this.buttonNewScan.UseWaitCursor = true;
             this.buttonNewScan.Click += new System.EventHandler(this.buttonNewScan_Click);
             // 
             // buttonScanAccept
             // 
-            this.buttonScanAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonScanAccept.Location = new System.Drawing.Point(496, 789);
+            this.buttonScanAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonScanAccept.Location = new System.Drawing.Point(433, 811);
             this.buttonScanAccept.Name = "buttonScanAccept";
-            this.buttonScanAccept.Size = new System.Drawing.Size(243, 30);
+            this.buttonScanAccept.Size = new System.Drawing.Size(118, 28);
             this.buttonScanAccept.TabIndex = 4;
-            this.buttonScanAccept.Text = "Сканировать и сохранить";
+            this.buttonScanAccept.Text = "Сохранить";
             this.buttonScanAccept.UseVisualStyleBackColor = true;
             this.buttonScanAccept.UseWaitCursor = true;
             this.buttonScanAccept.Click += new System.EventHandler(this.buttonScanAccept_Click);
@@ -94,10 +94,10 @@ namespace AppForScanning
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCancel.Location = new System.Drawing.Point(15, 789);
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCancel.Location = new System.Drawing.Point(16, 811);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(226, 30);
+            this.buttonCancel.Size = new System.Drawing.Size(118, 28);
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@ namespace AppForScanning
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(751, 824);
+            this.ClientSize = new System.Drawing.Size(563, 851);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonScanAccept);
             this.Controls.Add(this.buttonNewScan);
@@ -123,7 +123,7 @@ namespace AppForScanning
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Предпросмотр";
             this.UseWaitCursor = true;
-            this.Load += new System.EventHandler(this.FormPreview_Load_1);
+            this.Load += new System.EventHandler(this.FormPreview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

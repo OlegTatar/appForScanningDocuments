@@ -1,8 +1,8 @@
 ﻿using WIA;
 
-namespace AppForScanning.Logic
+namespace AppForScanning.Domain.Extensions
 {
-    public class Settings
+    public class ScannerSettings
     {
         /// <summary>
         /// Adjusts the settings of the scanner with the providen parameters.
